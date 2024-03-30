@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+	--color-card: #669898;
+	--color-nav: #3E8080;
+	--color-bg: #E6FFFF;
+	--color-highlight: #ff8568;
+}
+
+
+/*<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900
+.raleway-<uniquifier> {
+ font-family: "Raleway", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: <weight>;
+ font-weight: <weight>;
+ font-style: normal;
+} */
+.raleway-medium {
+	font-family: "Raleway", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+} 
+.raleway-bold {
+ font-family: "Raleway", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 700;
+ font-style: normal;
+} 
+.raleway-extraBold {
+ font-family: "Raleway", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 800;
+ font-style: normal;
+} 
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	background-color: var(--color-bg);
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .85em;
+}
+
+header {
+	background-color: var(--color-nav);
+    height: 10vh;
+    display: flex;
+    /* margin-bottom: 1em; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	margin-bottom: 0;
+}
+
+header button {
+	background-color: #d83c3c00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    margin-left: 10px;
+    color: #EFEFEF;
+	font-weight: 800;
+}
+.name-button {
+	font-size: 36px;
+}
+
+.card-center {
+	padding: 1em;
+    /* margin: 1em; */
+	margin-top: 0;
+	margin-left: 2em;
+    font-size: 20px;
+	background-color: var(--color-card);
+	color: #fff;
+	max-height: 80vh;
+	border-radius: 0 0 50px 50px;
+	overflow-y: hidden;
+}
+.card-center p {
+	line-height: 150%;
+	padding: 2em;
+}
+
+.card-left {
+	padding: 1em;
+	/* margin: 1em; */
+	margin-top: 0;
+	margin-left: 2.3em;
+	background-color: var(--color-highlight);
+	max-height: 80vh;
+	border-radius: 0 0 30px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card-left h1 {
+	font-size: 36px;
+	font-weight: 800;
+	padding:0;
+	margin:0;
+}
+.card-left p {
+	line-height: 130%;
+	font-size: 26px;
+	font-weight: 600;
+	padding: 0 1.1em;
+	text-align: center;
+}
+
+.card-right {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+	gap: 2em;
+	margin-top: 7em;
+}
+.top {
+	background-color: #EFEFEF;
+	width: 16em;
+	height: 16em;
+	border-radius: 50%;
+	justify-content: center;
+	margin-top: 5em;
+	margin-bottom: 1.5em;
+}
+
+.top img {
+	width: 16em;
+	height: 16em;
+
+}
+
+.card-right button {
+	background-color: var(--color-highlight);
+	border: none;
+    padding: 10px 20px;
+    /* width: 50vp; */
+    height: 3em;
+	margin-left: 2em;
+	font-weight: 800;
+	font-size: 36px;
+    color: #fff;
+	border-radius: 15px 0px 0px 15px;
+}
