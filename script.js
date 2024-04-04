@@ -63,7 +63,7 @@ blogButton.addEventListener('click', function() {
 //   .then(response => response.text())
 //   .then(data => browserTab.innerHTML = data)
 //   .catch(err => console.error(err));
-fetch('test.md')
+fetch('./entries/test.md')
   .then(response => response.text())
   .then(markdown => marked.parse(markdown))
   .then(html => {
@@ -74,9 +74,6 @@ fetch('test.md')
 
 
 
-document.querySelectorAll('pre').forEach(function(pre) {
-    hljs.highlightBlock(pre); 
-     
-})
+
 
 
