@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+	--color-card: #669898;
+	--color-nav: #3E8080;
+	--color-bg: #E6FFFF;
+	--color-highlight: #ff8568;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* 
+	medium: 500
+	bold: 700
+	extrabold: 800 */
+ 
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	background-color: var(--color-bg);
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .83em;
+    gap: .7em;
+    gap: .65em;
+}
+
+.browser-slug {
+	position: relative;
+	z-index: 1;
+	height: 2.9vh;
+	height: 2.1vh;
+	height: 1.75vh;
+	background-color: #c9b9b9;
+}
+
+header {
+	background-color: var(--color-nav);
+    height: 6vh;
+    height: 7vh;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	margin-bottom: 0;
+	padding-left:0;
+	font-family: inherit;
+	position: relative;
+	z-index: 1;
+}
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* padding: 0.5em 0.5em 0.5em 0.5em; */
+	width: 100%;
+	height: 9vh;
+	background-color: var(--color-nav);
+	z-index: 1;
+}
+
+.name-button {
+	background-color: var(--color-nav);
+	z-index: 1;
+	font-family: inherit;
+	font-size: 36px;
+	font-size: 38px;
+	font-size: 40px;
+	font-weight: 700;
+	padding-left: 1vw;
+	margin-left: 0.8vw;
+}
+.hidden {
+	display: none;
+}
+#access-info {
+	position: absolute;
+	z-index: -1;
+	background-color: #fdcdde;
+	background-color: var(--color-nav);
+	width: 20vw;
+	height: 25vh;
+	margin-left: 1.8vw;
+	margin-top: 33vh;
+	border-radius: 0 0 50px 50px;
+
+}
+#email-tab {
+	position: absolute;
+	z-index: -1;
+	background-color: #fdcdde;
+	background-color: var(--color-nav);
+	width: 40vw;
+	height: 40vh;
+	margin-left: 50vw;
+	margin-top: 50vh;
+	border-radius: 0 0 50px 50px;
+
+}
+#browser-card {
+	position: fixed;
+	z-index: 0.5;
+	background-color: var(--color-nav);
+	background-color: #fdcdde;
+	background-color: black;
+	color: white;
+	width: 75vw;
+	height: 80vh;
+	max-height: 70vh;
+	margin-left: 2vw;
+	margin-top: 5vh;
+	padding: 1.5em;
+	border-radius: 50px;
+	font-size: 2em;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	scrollbar-color: #a2a1d6 #000;
+	box-shadow: 0 0 20px 100vw #00000075;
+}
+
+
+/* box-shadow options: 
+	offset-x offset-y blur spread color | 
+	inset(for inner shadow) | 
+	<length>{2,3} = x-offset y-offset(optional) blur-radius(optional) spread(optional) color(optional)
+*/
+@supports selector(::-webkit-scrollbar) {
+	#browser-card::-webkit-scrollbar-thumb {
+		background: rgb(162, 161, 214);
+	}
+	#browser-card::-webkit-scrollbar {
+		height: 15px;
+		max-width: 10px;
+	}
+}
+#browser-card pre {
+	color: rgb(255, 96, 96);
+}
+#browser-card table {
+	color: rgb(162, 161, 214);
+	border: 1px solid rgb(162, 161, 214);
+	border-radius: 50px;
+	/* border-collapse: collapse; */
+}
+#browser-card table td,th {
+	/* border: 1px solid rgb(162, 161, 214); */
+	padding: .5em;
+	/* border-radius: 50px; */
+}
+
+.info-tab p {
+	position: relative;
+	font-size:2em;
+}
+.access-options{
+	list-style-type: none;
+}
+.access-options li{
+	font-size: 1.5em;
+	padding: 0.5em;
+}
+.buttons-right {
+	display: flex;
+	justify-content: space-between;
+	vertical-align: middle;
+	margin-right: 2.5vw;
+	/* align-items: center; */
+	/* width: 27vw; */
+	/* padding: 2vw; */
+	/* flex-direction: row; */
+	/* margin-left: 5em; */
+}
+.contact-btn {
+	/* background-color: #cdcdcd; */
+	background-color: var(--color-nav);
+	display: flex;
+	/* vertical-align: middle; */
+	align-items: center;
+	z-index: 1;
+	
+}
+.contact-btn img {
+	width: 55px;
+	margin-left:1vw;
+}
+
+header button {
+	/* align-items: inherit; */
+	/* background-color: #d83c3c00; */
+	background-color: inherit;
+    border: none;
+    padding: 1vh 1vw;
+    /* font-size: 1.3em; */
+    font-size: 24px;
+	font-family: inherit;
+    margin-left: 10px;
+    color: #EFEFEF;
+	font-weight: 600;
+	/* justify-content: space-between; */
+}
+
+.card-center {
+	padding: 1em;
+    /* margin: 1em; */
+	margin-top: 0;
+	margin-left: 2em;
+	margin-left: 2.1em;
+    font-size: 20px;
+	background-color: var(--color-card);
+	color: #fff;
+	max-height: 80vh;
+	border-radius: 0 0 50px 50px;
+	overflow-y: hidden;
+	box-shadow: 5px 5px 15px #0c0c0d40;
+	font-weight: 500;
+}
+.card-center p {
+	line-height: 150%;
+	padding: 2vw;
+	padding-top:0;
+	font-size: 1.1em;
+	color: #fff;
+}
+.card-center h2 {
+	padding: 2vw;
+	padding-top: 2vh;
+	font-weight: 600;
+	font-size: 39px;
+	margin-top: 7.5vh;
+}
+
+.card-left {
+	padding: 1em;
+	/* margin: 1em; */
+	margin-top: 0;
+	margin-left: 2.25em;
+	margin-right: 0;
+	background-color: var(--color-highlight);
+	max-height: 80vh;
+	border-radius: 0 0 50px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 5px 5px 15px #0c0c0d40;
+	font-weight: 500;
+}
+.card-left h1 {
+	font-size: 36px;
+	font-weight: 800;
+	padding:0;
+	margin:0;
+}
+.card-left p {
+	line-height: 130%;
+	font-size: 26px;
+	font-weight: 600;
+	padding: 0 1.1em;
+	text-align: center;
+}
+
+.card-right {
+	display: grid;
+    grid-template-rows: repeat(6, 1fr);
+	gap: 2em;
+	gap: 2.02em;
+	gap: 1.9em;
+	/* font-family: inherit; */
+	margin-top: 7em;
+	margin-top: 7.1em;
+	max-height: 70vh;
+}
+.top {
+	background-color: #EFEFEF;
+	width: 16.5em;
+	height: 16.5em;
+	border-radius: 50%;
+	justify-content: center;
+	margin-top: 5em;
+	margin-top: 4.3em;
+	margin-bottom: 1.5em;
+}
+
+.top img {
+	width: 16em;
+	height: 16em;
+	
+}
+
+.card-right button {
+	background-color: var(--color-highlight);
+	border: none;
+    /* padding: 10px 20px; */
+	padding:0;
+    height: 10vh;
+    height: 10.5vh;
+	margin-left: 2.1em;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 38px;
+    color: #fff;
+	border-radius: 16px 0px 0px 16px;
+	/* max-height: 3em; */
+	box-shadow: 5px 5px 15px #0c0c0d40;
+}
+
+
+
+.clicked {
+	animation: none;
+}
+
+/* Possible values for animation:
+	none | forwards | backwards | both | initial | inherit;
+	https://www.w3schools.com/cssref/css3_pr_animation.asp
+*/
+
+@keyframes party {
+	/* 0% {
+		background-color: red;
+	} */
+    0% {
+		transform: translateY(-100%);
+    }
+    100% {
+    /* transition: transform 250ms; */
+    }
+}
+@keyframes close-tab {
+    100% {
+		transform: translateY(-100%);
+    }
+}
+@keyframes open-large {
+	/* 0% {
+		background-color: red;
+	} */
+    0% {
+		transform: translateY(100%);
+    }
+    100% {
+    /* transition: transform 250ms; */
+    }
+}
+@keyframes close-large {
+    100% {
+		transform: translateY(-100%);
+    }
+}
+
+
+
+/* #access-info.show-animation {
+	transition: all 3.5s ease-in-out;
+} */
