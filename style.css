@@ -188,6 +188,7 @@ header {
 	/* vertical-align: middle; */
 	align-items: center;
 	z-index: 1;
+	height: inherit;
 	
 }
 .contact-btn img {
@@ -200,7 +201,7 @@ header button {
 	/* background-color: #d83c3c00; */
 	background-color: inherit;
     border: none;
-    padding: 1vh 1vw;
+    padding: .5vh 1vw;
     /* font-size: 1.3em; */
     font-size: 24px;
 	font-family: inherit;
@@ -254,6 +255,7 @@ header button {
 	align-items: center;
 	box-shadow: 5px 5px 15px #0c0c0d40;
 	font-weight: 500;
+	overflow-y: hidden;
 }
 .card-left h1 {
 	font-size: 36px;
