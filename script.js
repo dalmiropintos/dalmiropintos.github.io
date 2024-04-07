@@ -60,7 +60,7 @@ browserTab.addEventListener('keydown', function (event) {
 browserTab.setAttribute('tabindex', '-1');
 
 
-fetch('./entries/test.md')
+fetch('entries/test.md')
     .then(response => response.text())
     .then(markdown => marked.parse(markdown))
     .then(html => {

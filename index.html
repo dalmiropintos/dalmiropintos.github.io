@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+	<title>Dalmiro - Portfolio</title>
+</head>
+
+<body>
+	<!-- <div class="browser-slug"></div> -->
+	<header>
+		<nav class="nav-bar">
+			<button id="config-button" class="nav-button name-button">Dalmiro Pintos</button>
+			<div class="nav-button buttons-right">
+				<button id="email-button" class="contact-btn"> Mail <img
+						src="./assets/ic_round-mail-outline.svg" /></button>
+				<button class="contact-btn"> LinkedIn <img src="./assets/la_linkedin.svg" /></button>
+				<button class="contact-btn"> Github <img src="./assets/jam_github.svg" /></button>
+			</div>
+		</nav>
+		<div id="access-info" class="info-tab hidden">
+			<!-- <p>Esta es mi página web</p> -->
+			<ul class="access-options">
+				<li>uno</li>
+				<li>dos</li>
+				<li>tres</li>
+			</ul>
+		</div>
+		<div id="email-tab" class="email-tab hidden">
+			<div class="email-content">
+				<input type="text" id="email-input" value="dalmiropintos@gmail.com">
+				<button onclick="copyEmail()">Copy</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="card card-left">
+			<div class="top">
+				<img src="" alt="" sizes="" srcset="">
+			</div>
+			<h1>Desarrollador de software</h1>
+			<div class="profile-text">
+				<h3 class="subtitle">Lenguajes con paradigmas modernos:</h3>
+				<ul>
+					<li>
+						JavaScript
+					</li>
+					<li>
+						Java
+					</li>
+					<li>
+						Rust &#x1F980;
+					</li>
+				</ul>
+				<h3 class="subtitle">Desarrollo Web:</h3>
+				<ul>
+					<li>
+						SPAs
+					</li>
+					<li>
+						Angular
+					</li>
+					<li>
+						HTMX
+					</li>
+					<li>
+						APIs REST
+					</li>
+				</ul>
+				<h3 class="subtitle">Scripting y Automatización:</h3>
+				<ul>
+					<li>
+						Bash scripting
+					</li>
+					<li>
+						Programas en CLI
+					</li>
+					<li>
+						Grep
+					</li>
+				</ul>
+				
+				<!-- <h3 class="subtitle">Lenguajes de programación:</h3>
+				<p>
+					Competente en el uso de paradigmas modernos, Programación Orientada a Objetos con <em>JavaScript</em> y <em>Java</em>, programación enfocada al rendimiento y seguridad a nivel de sistema con <em>Rust</em> &#x1F980;.
+				</p>
+				<h3 class="subtitle">Desarrollo Web:</h3>
+				<p>
+					Dominio en la creación de <em>Aplicaciones de Una Sola Página (SPA)</em> con framework <em>Angular</em> y la biblioteca <em>HTMX</em>, diseño e integración de <em>APIs REST</em> robustas.
+				</p>
+				<h3 class="subtitle">Scripting y Automatización:</h3>
+				<p>
+					Experiencia implementando <em>Bash scripting</em> para automatización de tareas y optimización de procesos de desarrollo en sistemas tipo Unix.
+				</p> -->
+			</div>
+		</section>
+		<section class="card card-center">
+			<h2>Título</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore hic dicta ab distinctio, repudiandae
+				saepe voluptates necessitatibus totam ullam quasi illo, doloremque commodi, fugiat quaerat dolores nisi.
+				Officiis et temporibus quas, voluptate nesciunt, praesentium voluptatibus asperiores sequi repudiandae,
+				vel dolor non iste aliquam possimus ad mollitia? Optio magni amet ea labore odio. Veritatis, id tempore
+				enim, voluptas quam earum nisi minus, quaerat sapiente praesentium reprehenderit accusamus velit ea hic.
+				Quidem distinctio ipsum cupiditate adipisci,
+			</p>
+		</section>
+		<section class="card card-right">
+			<button id="projects-button">Proyectos</button>
+			<button id="blog-button">Blog</button>
+			<button>Button</button>
+			<button>Button</button>
+			<button>Button</button>
+		</section>
+		<section id="browser-card" class="card browser-card hidden">
+			<h2>BLOG/PROYECTOS</h2>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nulla, maiores, suscipit
+				repellendus corrupti amet error tempore aliquam consequatur est, commodi iste voluptatum soluta natus
+				beatae quas! Eius et dolorum, culpa atque sequi repellat, magnam voluptatum earum cupiditate possimus
+				distinctio laborum, ut similique amet excepturi labore. Assumenda harum delectus, quaerat dolore, cumque
+				ipsam quia fuga debitis, soluta fugit molestias nemo! Odit ullam dolore maiores nihil, eaque ratione
+				consectetur porro ex fuga deserunt dignissimos minima deleniti? Est similique quisquam velit molestias?
+			</p>
+		</section>
+	</main>
+</body>
+
+</html>
